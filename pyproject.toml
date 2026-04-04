@@ -1,0 +1,22 @@
+[project]
+name = "elfo"
+version = "0.1.0"
+description = "Real-time LFO (Low Frequency Oscillator) generators for Python"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Kris Vandecruys", email = "kris.vandecruys@davinsi.com" }
+]
+keywords = ["lfo", "oscillator", "audio", "music", "signal", "generator"]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["matplotlib", "numpy"]
+
+[project.scripts]
+elfo = "elfo:main"
+
+[build-system]
+requires = ["uv_build>=0.11.1,<0.12.0"]
+build-backend = "uv_build"
