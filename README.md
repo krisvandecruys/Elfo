@@ -12,7 +12,7 @@ Each oscillator is a generator that yields `float` values in the range `[-1.0, +
 |-------------|--------------------------------------------------|
 | `sine`      | Smooth sinusoidal wave                           |
 | `square`    | Jumps between +1 and -1 at the half-cycle point  |
-| `sawtooth`  | Linear ramp from -1 to +1, then instant reset    |
+| `sawtooth`  | Linear ramp from +1 to -1, then instant reset    |
 | `triangle`  | Linear ramp up then down, no discontinuity       |
 | `s_and_h`   | Sample-and-hold: random value held for one cycle |
 
