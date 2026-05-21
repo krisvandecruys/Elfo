@@ -31,14 +31,14 @@ def square(frequency: float) -> Generator[float, None, None]:
 
 
 def sawtooth(frequency: float) -> Generator[float, None, None]:
-    """Sawtooth wave LFO. Ramps from -1 to +1 over each cycle.
+    """Sawtooth wave LFO. Ramps from +1 to -1 over each cycle.
 
     Args:
         frequency: Frequency in Hz.
     """
     start = time.perf_counter()
     while True:
-        yield ((time.perf_counter() - start) * frequency % 1.0) * 2.0 - 1.0
+        yield -((time.perf_counter() - start) * frequency % 1.0) * 2.0 + 1.0
 
 
 def triangle(frequency: float) -> Generator[float, None, None]:
